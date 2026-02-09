@@ -1,0 +1,98 @@
+/* สไตล์สำหรับตาราง View */
+.app-cmp-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+
+  td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ff0000;
+  }
+
+  .app-cl-number {
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  ._total-underline {
+    border-top: 2px solid #333;
+    color: #3b82f6;
+  }
+}
+
+/* สไตล์สำหรับปุ่มและฟอร์ม */
+.app-cmp-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover:not(:disabled) { opacity: 0.85; }
+  &:disabled { background-color: #ccc; cursor: not-allowed; }
+
+  &.app-cl-warn { background-color: #ef4444; }
+}
+
+._section-group {
+  border: 1px solid #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  margin-top:25px;
+  background: rgba(255, 255, 255, 0.05);
+
+  ._section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+    ._section-header b{
+    color: #e0e0e0;
+    font-size: larger;
+    }
+}
+
+._item-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+
+  input[type="number"] {
+    padding: 8px;
+    border: 1px solid #242424;
+    border-radius: 4px;
+    flex: 1;
+    background: rgba(15, 23, 42, 0.6);
+    color: #fff;
+
+  }
+
+    span{
+    color: #eaeaea;
+    font-size: medium;
+    }
+
+}
+._result-row{
+font-size: large;
+color: #ffffff;
+
+.app-cl-number{
+    font-size: larger;
+    color: #fbfbfb;
+    margin-left: 50px;
+}
+}

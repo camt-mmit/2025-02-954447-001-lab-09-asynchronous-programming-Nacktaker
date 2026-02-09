@@ -1,0 +1,80 @@
+.assignment-container {
+  margin-top: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  padding: 24px;
+}
+
+.sub-nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+  background: #f8fafc;
+  padding: 6px;
+  border-radius: 8px;
+  width: fit-content;
+
+  .nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #64748b;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: 0.3s;
+
+    .icon {
+      font-size: 1.1rem;
+    }
+
+    &:hover {
+      color: #0f172a;
+    }
+
+    /* เมื่อปุ่มถูกเลือก (Active State) */
+    &.active-link {
+      background: white;
+      color: #3b82f6;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      font-weight: 700;
+    }
+  }
+}
+
+.content-wrapper {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ไฟล์ SCSS ของ Form */
+
+.app-cmp-button {
+  /* ... สไตล์เดิมที่ให้ไป ... */
+  padding: 8px; /* ปรับ padding ให้ปุ่มเป็นสี่เหลี่ยมจัตุรัสพอดีกับไอคอน */
+
+  /* ปรับขนาดไอคอนข้างในปุ่ม */
+  .material-symbols-outlined {
+    font-size: 1.3rem;
+    line-height: 1; /* แก้ปัญหาไอคอนลอยไม่ตรงกลาง */
+  }
+}
+
+/* เพิ่มเติม: ถ้าอยากให้ปุ่มขึ้น/ลง ดูต่างจากปุ่มลบ */
+._friend-container {
+  .app-cmp-button:not(.app-cl-warn) {
+    background: rgba(255, 255, 255, 0.08);
+    color: #94a3b8; // สีเทาอ่อนๆ
+
+    &:hover:not(:disabled) {
+      background: #3b82f6; // สีฟ้าเมื่อ Hover
+      color: white;
+    }
+  }
+}

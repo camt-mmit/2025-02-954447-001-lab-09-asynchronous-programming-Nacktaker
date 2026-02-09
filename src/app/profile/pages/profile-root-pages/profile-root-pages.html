@@ -1,0 +1,19 @@
+<div class="profile-dashboard">
+  <div class="glass-container">
+    <header class="dashboard-header">
+      <h2>Profile </h2>
+      <nav class="sub-nav">
+        <a routerLink="./view" routerLinkActive="active-link" class="nav-btn">
+          <i class="material-symbols-outlined icon">📋</i> View
+        </a>
+        <a routerLink="./form" routerLinkActive="active-link" class="nav-btn">
+          <i class="material-symbols-outlined icon">📝</i> Form
+        </a>
+      </nav>
+    </header>
+
+    <div class="content-wrapper">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
